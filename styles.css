@@ -1,0 +1,31 @@
+
+
+body{
+
+}
+
+
+nav{
+ background-color: #1f2833;
+
+ /* Puts Text within navbar to the right of page */
+ text-align: right;
+
+ /* gives space around text. top, bottom, left and right. WITHIN navbar */
+ padding: 10px;
+
+/* Doesn't WORK !! Tried changing text color but precedents of ANCHOR tag IS overwrittING */
+ /* color: #66fcf1; */
+
+
+ 
+}
+
+/* USE THIS TO OVERWRITE ANCHOR PRECEDENTS OF COLOR OF TEXT */
+.navbar > a {
+  color: #66fcf1;
+
+  /* gets rid of underline of anchor */
+  text-decoration: none;
+}
+
