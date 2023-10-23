@@ -30,16 +30,24 @@ nav{
 
 }
 
-h2{
+/* h2{
   display: flex;
   justify-content: center;
   color: white;
 
-}
+} */
 
 section{
   margin-left: 100px;
   margin-right:100px;
+
+  text-align: center;
+
+  padding: 10px;
+}
+
+section h2 {
+  color: white;
 }
 
 
@@ -60,6 +68,27 @@ section{
   /* initiate a Grid */
   display: grid;
   color:white;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+
+  justify-items: center;
+
+  gap:20px;
+
+}
+
+.portfolio-item{
+   
+/* Gives Box Aspect To Portfolio-items */
+  height: 150px;
+  width: 175px;
+
+  background-color: #45a29e;
+
+  padding: 10px;
+
+  
 
 }
 
