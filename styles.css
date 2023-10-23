@@ -115,8 +115,10 @@ hr{
   width: 175px;
 
   background-color: #45a29e;
+  padding: 10px;
+  border-radius: 5px;
 
-  /* padding: 10px; */
+
 
   
 
@@ -197,6 +199,24 @@ top:40%;
 .ig{
   grid-area: ig;
 
+}
+
+footer{
+  background-color: #1f2833;
+
+ /* Puts Text within navbar to the right of page */
+ text-align: center;
+
+ /* gives space around text. top, bottom, left and right. WITHIN navbar */
+ padding: 10px;
+
+/* Doesn't WORK !! Tried changing text color but precedents of ANCHOR tag IS overwrittING */
+ /* color: #66fcf1; */
+
+ box-shadow: 0px 2px 7px  #66fcf1;
+
+ margin-top: 15px;
+ color: #66fcf1;
 }
 
 
