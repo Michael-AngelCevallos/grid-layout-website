@@ -1,11 +1,22 @@
 
 
 body{
+ 
+  /* gets rif of white space above and around navbar on webpage */
+  margin: 0;
 
+  /* Add a padding of zero so other browers dont mess with our text */
+  padding:0;
+
+/* Changes Font of text in webpage */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  background-color: #0b0c10;
 }
 
 
 nav{
+
  background-color: #1f2833;
 
  /* Puts Text within navbar to the right of page */
@@ -17,9 +28,21 @@ nav{
 /* Doesn't WORK !! Tried changing text color but precedents of ANCHOR tag IS overwrittING */
  /* color: #66fcf1; */
 
-
- 
 }
+
+h2{
+  display: flex;
+  justify-content: center;
+  color: white;
+
+}
+
+section{
+  margin-left: 100px;
+  margin-right:100px;
+}
+
+
 
 /* USE THIS TO OVERWRITE ANCHOR PRECEDENTS OF COLOR OF TEXT */
 .navbar > a {
@@ -27,5 +50,17 @@ nav{
 
   /* gets rid of underline of anchor */
   text-decoration: none;
+
+  /* This Spaces Out text in navbar */
+  padding: 0 10px;
 }
+
+.portfolio-grid{
+
+  /* initiate a Grid */
+  display: grid;
+  color:white;
+
+}
+
 
