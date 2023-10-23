@@ -3,7 +3,7 @@
 body{
  
   /* gets rif of white space above and around navbar on webpage */
-  margin: 0;
+  margin: 50px;
 
   /* Add a padding of zero so other browers dont mess with our text */
   padding:0;
@@ -28,18 +28,17 @@ nav{
 /* Doesn't WORK !! Tried changing text color but precedents of ANCHOR tag IS overwrittING */
  /* color: #66fcf1; */
 
+ box-shadow: 0px -2px 7px  #66fcf1;
+
+ margin-bottom: 15px;
+
 }
 
-/* h2{
-  display: flex;
-  justify-content: center;
-  color: white;
 
-} */
 
 section{
-  margin-left: 100px;
-  margin-right:100px;
+  /* margin-left: 100px;
+  margin-right:100px; */
 
   text-align: center;
 
@@ -50,7 +49,32 @@ section h2 {
   color: white;
 }
 
+label{
 
+
+  /* Puts input boxes directly below label name */
+  display: block;
+
+  color: #66fcf1;
+  margin-bottom: 10px;
+
+}
+
+input, textarea{
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid #66fcf1;
+  padding: 5px 50px;
+
+  border-radius: 5px;
+
+  background-color: rgba(197, 198, 199, 0.2);
+  width: 100%;
+}
+
+hr{
+  margin-bottom: 25px;
+}
 
 /* USE THIS TO OVERWRITE ANCHOR PRECEDENTS OF COLOR OF TEXT */
 .navbar > a {
@@ -61,6 +85,8 @@ section h2 {
 
   /* This Spaces Out text in navbar */
   padding: 0 10px;
+
+  
 }
 
 .portfolio-grid{
@@ -76,6 +102,10 @@ section h2 {
 
   gap:20px;
 
+  margin-top: 50px;
+
+  padding-bottom: 60px;
+
 }
 
 .portfolio-item{
@@ -86,9 +116,86 @@ section h2 {
 
   background-color: #45a29e;
 
-  padding: 10px;
+  /* padding: 10px; */
 
   
+
+}
+
+.portfolio-item:nth-child(even){
+background-color: transparent;
+border: 2px solid #45a29e;
+color: #c5c6c7;
+}
+
+.contact-grid{
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+  /* grid-template-areas: ; */
+
+  grid-template-areas: 
+    "form form . fb twitter"
+    "form form . youtube ig";
+
+    gap: 10px;
+
+    padding-top: 50px;
+}
+
+.form{
+grid-area: form;
+
+
+}
+
+.fb, .twitter, .youtube, .ig{
+/* grid-area: fb; */
+
+width: 175px;
+height: 175px;
+
+color: #c5c6c7;
+
+border-radius: 5px;
+text-align: center;
+
+box-shadow: 0px 0px 7px #66fcf1;
+background-color: #0b0c10;
+
+}
+
+.fb > span, .twitter > span,.youtube > span, .ig > span{
+
+text-align: center;
+position: relative;
+top:40%;
+
+  }
+
+.form{
+  grid-area: form;
+  text-align: left;
+}
+
+.fb{
+  grid-area: fb;
+
+}
+
+.twitter{
+  grid-area: twitter;
+
+}
+
+.youtube{
+  grid-area: youtube;
+
+}
+
+.ig{
+  grid-area: ig;
 
 }
 
